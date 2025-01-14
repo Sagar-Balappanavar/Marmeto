@@ -1,0 +1,295 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+  }
+  
+  /* Header 
+  header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  header .logo h1 {
+    font-size: 24px;
+    color: #d4a13c;
+  }*/
+  
+ /* Navbar */
+/* Header Styling */
+header {
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for better design */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Space out elements */
+  max-width: 1200px;
+  margin: 0 auto; /* Center the header */
+}
+
+/* Logo Styling */
+.logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #010100;
+  margin: 0;
+  align-items: left;
+}
+
+/* Navigation Styling */
+nav {
+  display: flex;
+  gap: 30px; /* Add space between links */
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: color 0.1s ease, background-color 0.1s ease;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #f7efe9;
+  color: #d4a13c;
+}
+
+nav a.active {
+  background-color: #d4a13c;
+  color: #fff;
+}
+
+/* Cart Icons Styling */
+.cart-icons {
+  display: flex;
+  gap: 15px; /* Space between icons */
+  align-items: center;
+}
+
+.cart-icons i {
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.cart-icons i:hover {
+  color: #d4a13c;
+  transform: scale(1.2); /* Enlarge on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Add spacing for small screens */
+  }
+
+  nav {
+    gap: 20px;
+  }
+
+  .cart-icons {
+    justify-content: center;
+  }
+}
+
+  
+  
+  
+  /* Main Section */
+  main {
+    padding: 20px;
+  }
+  
+  .cart-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .cart-header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+  }
+  
+  .cart-header p {
+    color: #777;
+  }
+  
+  /* Cart Layout */
+.cart-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 0; /* No gap between sections */
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 2%;
+  }
+  
+  .cart-items {
+    flex: 1; /* Allow flexible width */
+    padding-right: 15px;
+    justify-content: space-around;
+  }
+  
+  .cart-totals {
+    flex-basis: 25%; /* Reserve 25% width for the totals */
+    padding: 20px;
+    background-color: #f7efe9;
+  }
+  
+  .cart-totals h2 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .cart-totals p {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .cart-table th, 
+  .cart-table td {
+    padding: 10px;
+    text-align: left;
+    border: none;
+  }
+  
+  .cart-table th {
+    background-color: #f7efe9;
+  }
+  
+  .checkout-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d4a13c;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .cart-wrapper {
+      flex-direction: column; /* Stack items vertically */
+    }
+  
+    .cart-items, .cart-totals {
+      flex-basis: 100%; /* Full width for both sections */
+      padding: 10px;
+    }
+  
+    .cart-totals {
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cart-totals h2 {
+      font-size: 18px; /* Adjust font size for small screens */
+    }
+  
+    .checkout-button {
+      font-size: 16px; /* Smaller text for button */
+      padding: 8px; /* Smaller padding */
+    }
+  }
+  
+
+  /* Styling for the product title */
+/* Container for image and title */
+.item-container {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically align items */
+    gap: 10px; /* Add space between image and title */
+  }
+  
+  /* Styling for the product image */
+  .item-image {
+    width: 80px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+  }
+  
+  /* Styling for the product title */
+  .item-title {
+    font-size: 18px; /* Adjust font size */
+    color: #a3a09b; /* Use dark shade for text */
+  }
+  
+  /* Styling for the product price */
+  .item-price {
+    font-size: 16px; /* Adjust font size */
+    font-weight: normal; /* Keep it normal weight */
+    color: #a3a09b; /* Golden color to match theme */
+  }
+  
+  /* Styling for subtotal and total amounts */
+.subtotal-highlight {
+    color: #a3a09b; /* Golden color to match the theme */
+    font-size: 15px; /* Slightly larger font size */
+  }
+  
+  
+  
+  
+  /* Footer */
+  footer {
+    background-color: #f7efe9;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-services {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+  }
+  
+  .footer-services .service {
+    display: flex;
+    align-items: center; /* Align icon and text horizontally */
+    justify-content: center;
+    max-width: 200px;
+    text-align: left; /* Align text to the left */
+    margin: 10px; /* Add spacing between services */
+  }
+  
+  .footer-services i {
+    font-size: 36px;
+    margin-right: 15px; /* Add spacing between the icon and text */
+  }
+  
+  @media (max-width: 768px) {
+    .footer-services {
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .footer-services .service {
+      text-align: center;
+      max-width: 100%; /* Allow full width on small screens */
+    }
+  }
+  
+    

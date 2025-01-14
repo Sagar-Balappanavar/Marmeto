@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="logo">
+        <h1>Marmeto</h1>
+      </div>
+  
+      <!-- Navigation Links -->
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+  
+      <!-- Cart Icons -->
+      <div class="cart-icons">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <i class="fa fa-heart-o" aria-hidden="true"></i>
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+      </div>
+    </div>
+  </header>
+  
+
+  <!-- Main Content Section -->
+  <main>
+    <div class="cart-header">
+
+      <h1>Cart</h1>
+      <p>Home > Cart</p>
+    </div>
+    <div class="cart-wrapper">
+      <!-- Cart Items -->
+      <div class="cart-items">
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Subtotal</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="cart-items"></tbody>
+        </table>
+      </div>
+    
+      <!-- Cart Totals -->
+      <div class="cart-totals">
+        <h2>Cart Totals</h2>
+        <p><span>Subtotal:</span> <span id="subtotal">₹0.00</span></p>
+        <p><span>Total:</span> <span id="total">₹0.00</span></p>
+        <button class="checkout-button">Check Out</button>
+      </div>
+    </div>
+    
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-services">
+      <div class="service">
+        <i class="fa fa-trophy" aria-hidden="true"></i>
+        <p><strong>High Quality</strong><br>crafted from top materials</p>
+      </div>
+      <div class="service">
+        <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+        <p><strong>Warranty Protection</strong><br>Over 2 years</p>
+      </div>
+      <div class="service">
+        <i class="fa fa-truck" aria-hidden="true"></i>
+        <p><strong>Free Shipping</strong><br>Order over 150 $</p>
+      </div>
+      <div class="service">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <p><strong>24/7 Support</strong><br>Dedicated support</p>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
